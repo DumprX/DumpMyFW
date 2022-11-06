@@ -6,7 +6,7 @@ env:
   # Gitlab
   PUSH_TO_GITLAB: true
   GITLAB_GROUP: DumprX
-  GITLAB_TOKEN: ENCRYPTED[53e1fd8c59665d561446832cb65ec1bc66b566adb5c57d541b5dd6ddaf71e0e05789ca6b5904f2acaf1a5ae02ba83cab]
+  GITLAB_TOKEN: ENCRYPTED[fd585c73d8b126daa1c338d3f672b1b1b66b442bd566a6c94eb9c4f59eb2acd26afe9157a97dd0d7e040166fa303f636]
   GITLAB_INSTANCE: gitlab.orfeo-toolbox.org
   
   # Private SSH Key
