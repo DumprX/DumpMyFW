@@ -1,1 +1,1 @@
-https://bigota.d.miui.com/V13.0.9.0.SGMMIXM/miui-blockota-ice_global-V13.0.6.0.SGMMIXM-V13.0.9.0.SGMMIXM-27dacd3bbc-12.0.zip
+https://rsd-prod-secure.s3.amazonaws.com/VICKY_G_SYS_S3SV32.45-24-3_subsidy-DEFAULT_regulatory-DEFAULT_cid50_CFC.xml.zip?AWSAccessKeyId=AKIAIMVHGYWJWQTJEM5Q&Expires=1672372827&Signature=svSL3pgspedIE1I8SJ42gAJkfAY%3D
