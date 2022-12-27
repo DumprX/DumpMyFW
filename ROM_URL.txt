@@ -1,1 +1,1 @@
-https://mirrors-obs-2.lolinet.com/firmware/motorola/2016/owens/official/RETAIL/XT1775_OWENS_RETAIL_7.1.1_NPR26.58-25_cid50_subsidy-DEFAULT_regulatory-DEFAULT_CFC.xml.zip
+http://mirrors-obs-2.lolinet.com/firmware/motorola/2016/owens/official/RETAIL/XT1775_OWENS_RETAIL_7.1.1_NPR26.58-25_cid50_subsidy-DEFAULT_regulatory-DEFAULT_CFC.xml.zip
