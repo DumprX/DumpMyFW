@@ -44,6 +44,7 @@ task:
       - echo "$TG_CHAT" > .tg_chat
       - echo "$TG_TOKEN" > .tg_token
       - echo "$GITLAB_INSTANCE" > .gitlab_instance
+      - sudo dnf install -y f2fs-tools
       - sudo bash setup.sh
 
   DumprX_script:
