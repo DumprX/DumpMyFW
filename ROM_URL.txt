@@ -1,1 +1,1 @@
-https://android.googleapis.com/packages/ota-api/nokia_ple_ta102500ww/e6f847cc1e934d392df080abcdf256b5eb3b5cf5.zip
+https://canary-mirror-index.sushrut1101.workers.dev/0:/Samfw.com_SM-E236B_INS_E236BXXU1AVJ1_fac.zip
