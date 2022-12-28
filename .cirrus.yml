@@ -48,4 +48,4 @@ task:
 
   DumprX_script:
       - cd DumprX || echo "Already in the Directory"
-      - ./dumper.sh $(< ${CIRRUS_WORKING_DIR}/ROM_URL.txt)
+      - sudo bash dumper.sh $(< ${CIRRUS_WORKING_DIR}/ROM_URL.txt)
