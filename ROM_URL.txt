@@ -1,1 +1,1 @@
-https://bigota.d.miui.com/V12.5.9.0.RKUMIXM/miui_SELENEGlobal_V12.5.9.0.RKUMIXM_9db452b99e_11.0.zip
+https://bigota.d.miui.com/V12.5.26.0.RKUEUXM/selene_eea_global_images_V12.5.26.0.RKUEUXM_20221103.0000.00_11.0_eea_f37512487e.tgz
