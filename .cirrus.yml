@@ -33,7 +33,7 @@ task:
       disk: 69
 
   Clone_script:
-      - git clone --depth=1 --single-branch https://github.com/DumprX/DumprX.git
+      - git clone --depth=1 --single-branch https://github.com/DumprX/DumprX.git DumprX
   
   Set-SSH-Keys_script:
       - mkdir -p ~/.ssh
@@ -53,8 +53,8 @@ task:
       - echo "$TG_TOKEN" > .tg_token
       - echo "$GITLAB_INSTANCE" > .gitlab_instance
       - sudo bash setup.sh
-      - sudo apt install -y neofetch
+      - sudo apt install -y neofetch f2fs-tools
 
   DumprX_script:
       - cd DumprX || echo "Already in the Directory"
-      - ./dumper.sh $(< ${CIRRUS_WORKING_DIR}/ROM_URL.txt)
+      - sudo bash dumper.sh $(< ${CIRRUS_WORKING_DIR}/ROM_URL.txt)
