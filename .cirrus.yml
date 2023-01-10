@@ -53,6 +53,7 @@ task:
       - echo "$TG_TOKEN" > .tg_token
       - echo "$GITLAB_INSTANCE" > .gitlab_instance
       - sudo bash setup.sh
+      - sudo apt install -y neofetch
 
   DumprX_script:
       - cd DumprX || echo "Already in the Directory"
