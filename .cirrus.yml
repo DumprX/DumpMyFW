@@ -18,9 +18,7 @@ task:
   skip: $CIRRUS_BRANCH == 'main'
   auto_cancellation: $CIRRUS_BRANCH == 'autocancel'
   timeout_in: 120m
-  container:
-      image: ghcr.io/sushrut1101/docker:arch
-      privileged: true
+  compute_engine_instance:
       cpu: 4
       memory: 16G
 
