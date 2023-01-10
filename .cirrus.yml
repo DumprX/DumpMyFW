@@ -12,20 +12,28 @@ env:
   # Private SSH Key
   PRIV_SSH_KEY: ENCRYPTED[a6edf355d21857b835c9e347c83b38cef62ddc46258fe62d530b8fc9be3f240b273fccdfa70aa50cf255cb5d3b69e730]
 
+  # Shell
+  CIRRUS_SHELL: bash
+
+  # Home Directory
+  HOME: /root
+
 task:
   name: "Firmware Dump by DumprX"
   only_if: $CIRRUS_REPO_OWNER == 'DumprX'
   skip: $CIRRUS_BRANCH == 'main'
   auto_cancellation: $CIRRUS_BRANCH == 'autocancel'
   timeout_in: 120m
-  container:
-      image: ghcr.io/sushrut1101/docker:arch
-      privileged: true
+  compute_engine_instance:
+      image_project: ubuntu-os-cloud
+      image: family/ubuntu-2210-amd64
+      platform: linux
       cpu: 4
       memory: 16G
+      disk: 69
 
   Clone_script:
-      - git clone --depth=1 --single-branch https://github.com/DumprX/DumprX.git
+      - git clone --depth=1 --single-branch https://github.com/DumprX/DumprX.git DumprX
   
   Set-SSH-Keys_script:
       - mkdir -p ~/.ssh
@@ -45,7 +53,8 @@ task:
       - echo "$TG_TOKEN" > .tg_token
       - echo "$GITLAB_INSTANCE" > .gitlab_instance
       - sudo bash setup.sh
+      - sudo apt install -y neofetch f2fs-tools
 
   DumprX_script:
       - cd DumprX || echo "Already in the Directory"
-      - ./dumper.sh $(< ${CIRRUS_WORKING_DIR}/ROM_URL.txt)
+      - sudo bash dumper.sh $(< ${CIRRUS_WORKING_DIR}/ROM_URL.txt)
