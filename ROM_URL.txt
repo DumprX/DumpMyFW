@@ -1,1 +1,1 @@
-http://bigota.d.miui.com/V11.0.3.0.NCJCNXM/meri_images_V11.0.3.0.NCJCNXM_20191125.0000.00_7.1_cn_0eb3e99e93.tgz
+https://bigota.d.miui.com/V13.0.15.0.SGMMIXM/miui_ICEGlobal_V13.0.15.0.SGMMIXM_4ce69d0051_12.0.zip
