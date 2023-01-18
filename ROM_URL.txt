@@ -1,1 +1,1 @@
-https://bigota.d.miui.com/V13.0.9.0.SGMMIXM/miui-blockota-ice_global-V13.0.6.0.SGMMIXM-V13.0.9.0.SGMMIXM-27dacd3bbc-12.0.zip
+https://mirrors-obs-2.lolinet.com/firmware/motorola/2015/kinzie_retcn/RETCN/XT1581_KINZIE_RETCN_DS_5.1.1_LPKS23.229-1-5_cid11_subsidy-DEFAULT_CFC.xml.zip
