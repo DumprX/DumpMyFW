@@ -17,5 +17,3 @@ Dump Android ROMs/Firmwares Online, via a PR, for free!
 - The Dumping Process (and pushing) takes time (Usually 10-30 Minutes)(Depending Upon your ROM). So Please Be Patient.
 - Our Telegram Support Chat: [@DumprXChat](https://t.me/+_uajqfCeH6Y4ZWJl)
 
-
- Go to [cirrus-ci.com](https://cirrus-ci.com) And see the Build Logs.
