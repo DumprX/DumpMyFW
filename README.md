@@ -15,4 +15,7 @@ Dump Android ROMs/Firmwares Online, via a PR, for free!
 - This Script use [DumprX](https://github.com/DumprX/DumprX.git) to Dump the ROM/Firmware.
 - Only Dump Your Firmwares by making a PR.
 - The Dumping Process (and pushing) takes time (Usually 10-30 Minutes)(Depending Upon your ROM). So Please Be Patient.
-- Out Telegram Support Chat: [@DumprXChat](https://t.me/DumprXChat)
+- Our Telegram Support Chat: [@DumprXChat](https://t.me/+_uajqfCeH6Y4ZWJl)
+
+
+ Go to [cirrus-ci.com](https://cirrus-ci.com) And see the Build Logs.
