@@ -1,1 +1,1 @@
-https://bigota.d.miui.com/V13.0.9.0.SGMMIXM/miui-blockota-ice_global-V13.0.6.0.SGMMIXM-V13.0.9.0.SGMMIXM-27dacd3bbc-12.0.zip
+https://github.com/RM6833/releases/releases/download/LineageOS-20.0-RMX3242_0223_RUI4/lineage-20.0-20230212-UNOFFICIAL-RMX3242.zip
