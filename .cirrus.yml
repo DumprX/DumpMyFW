@@ -5,9 +5,10 @@ env:
   
   # Gitlab
   PUSH_TO_GITLAB: true
-  GITLAB_GROUP: Android-Dumps
-  GITLAB_TOKEN: ENCRYPTED[86ee4e92f3a156c35d43a8e6617dff5ef4fe83cdf6b46ae7060b55f96049d25a64d3e0b1f34e4166e5d33cf98d1cb60d]
-  
+  GITLAB_GROUP: DumprX
+  GITLAB_TOKEN: ENCRYPTED[9df452a061a97524a9994517e5fc5bbc4ebbb62aff325ec486ae4395276ba8561ca921bcd0dac76c0f2edff77808b6d8]
+  GITLAB_INSTANCE: www.opencode.net
+
   # Private SSH Key
   PRIV_SSH_KEY: ENCRYPTED[991b9f9111329b8e8135040d22ec23508a560304dac1ef13d515eef2cdef4c15bbfaf329403d55b913af2b74c9e08edb5bnm6b1tsjvlJqpv0DfbQqJBxrpj0bHFIA+1p4JX7J2N02ZWp6Ui0AHsW+jAqqmTz+NlXWKQ4I7UKoAP+8eLHnDIvfLupCJVMx4cZYSR3pCR+zPzjxushZ8/CWyt3WiiTnEncPzDDJHpf7sW5OtZ3Fj7fcOw/PutNgBmQkj33w9JDK3s5bxSYt6Rj3qMldRQHUZ84/CXN36hik3Pf/CJjMy8p4wayJ9dLf8oRtfGsWUGHWq2mOl3ie1VsQIBrDCFYfkTVnYpJyu/rMxs63qVyLyXLIOAhBd1rPtM7WL/fV/beNY4PgvR0aDHHiG/HMqzAMIjUJC9nOVy075+cog7/02YZbrBXROAWTOFsIxlhxudqqjb1gDLnOIauzEKDzXEW/65Jrrv1QzrJubCTdQ== dian@petanikode.com]
 
@@ -42,6 +43,7 @@ task:
       - echo "$GITLAB_GROUP" > .gitlab_group
       - echo "$TG_CHAT" > .tg_chat
       - echo "$TG_TOKEN" > .tg_token
+      - echo "$GITLAB_INSTANCE" > .gitlab_instance
       - sudo bash setup.sh
 
   DumprX_script:
