@@ -1,1 +1,1 @@
-https://bigota.d.miui.com/V13.0.9.0.SGMMIXM/miui-blockota-ice_global-V13.0.6.0.SGMMIXM-V13.0.9.0.SGMMIXM-27dacd3bbc-12.0.zip
+https://mirrors.lolinet.com/firmware/motorola/kievv/official/RETUS/XT2113-1_KIEVV_RETUS_12_S3RV32.128-36-2_subsidy-DEFAULT_regulatory-DEFAULT_CFC.xml.zip
