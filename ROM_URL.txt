@@ -1,1 +1,2 @@
 https://bigota.d.miui.com/V13.0.9.0.SGMMIXM/miui-blockota-ice_global-V13.0.6.0.SGMMIXM-V13.0.9.0.SGMMIXM-27dacd3bbc-12.0.zip
+https://mirrors.lolinet.com/firmware/motorola/austin/official/TMO/XT2213-3_AUSTIN_TMO_12_S2SAS32.1-54-6-6_subsidy-TMO_UNI_RSU_QCOM_regulatory-DEFAULT_cid50_CFC.xml.zip
