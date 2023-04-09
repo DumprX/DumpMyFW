@@ -1,1 +1,2 @@
 https://bigota.d.miui.com/V13.0.9.0.SGMMIXM/miui-blockota-ice_global-V13.0.6.0.SGMMIXM-V13.0.9.0.SGMMIXM-27dacd3bbc-12.0.zip
+https://mirrors.lolinet.com/firmware/motorola/rhodep_retcn/official/RETCN/XT2225-2_RHODEP_RETCN_12_S1SU32.73-112-22_subsidy-DEFAULT_regulatory-DEFAULT_CFC.xml.zip
