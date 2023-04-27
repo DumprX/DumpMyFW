@@ -1,1 +1,1 @@
-https://bigota.d.miui.com/V13.0.9.0.SGMMIXM/miui-blockota-ice_global-V13.0.6.0.SGMMIXM-V13.0.9.0.SGMMIXM-27dacd3bbc-12.0.zip
+https://mirrors.lolinet.com/firmware/motorola/tesla/official/TMO/XT2205-1_TESLA_TMO_12_SYS_S2STS32.71-115-1_subsidy-TMO_UNI_RSU_QCOM_regulatory-DEFAULT_cid50_CFC.xml.zip
