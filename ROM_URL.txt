@@ -1,1 +1,1 @@
-https://mirrors.lolinet.com/firmware/motorola/devon/official/RETAIL/DEVON_RETAIL_12_S2SN32.34-72-12_subsidy-DEFAULT_regulatory-DEFAULT_cid50_CFC.xml.zip
+https://mirrors.lolinet.com/firmware/motorola/devon/official/RETGB/XT2235-2_DEVON_RETGB_12_S2SNS32.34-60-6_subsidy-DEFAULT_regulatory-XT2235-2-UK_cid50_CFC.xml.zip
