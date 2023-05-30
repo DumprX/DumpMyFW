@@ -14,7 +14,7 @@ env:
 
 task:
   name: "Firmware Dump by DumprX"
-  only_if: $CIRRUS_REPO_OWNER == 'DumprX'
+  only_if: $CIRRUS_REPO_OWNER == 'Diwash1001'
   skip: $CIRRUS_BRANCH == 'main'
   auto_cancellation: $CIRRUS_BRANCH == 'autocancel'
   timeout_in: 120m
