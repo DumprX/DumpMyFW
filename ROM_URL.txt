@@ -1,1 +1,1 @@
-https://bigota.d.miui.com/V13.0.9.0.SGMMIXM/miui-blockota-ice_global-V13.0.6.0.SGMMIXM-V13.0.9.0.SGMMIXM-27dacd3bbc-12.0.zip
+https://mirrors.lolinet.com/firmware/motorola/xpeng/official/RETEU/XT2175-1_XPENG_RETEU_12_S1RXS32.50-13-17_subsidy-DEFAULT_regulatory-XT2175-1-EU_cid50_CFC.xml.zip
