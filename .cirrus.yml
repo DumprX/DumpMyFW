@@ -21,7 +21,7 @@ task:
   container:
       image: ghcr.io/sushrut1101/docker:arch
       privileged: true
-      cpu: 4
+      cpu: 2
       memory: 16G
 
   Clone_script:
