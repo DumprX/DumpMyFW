@@ -1,1 +1,1 @@
-https://bigota.d.miui.com/V13.0.9.0.SGMMIXM/miui-blockota-ice_global-V13.0.6.0.SGMMIXM-V13.0.9.0.SGMMIXM-27dacd3bbc-12.0.zip
+https://android.googleapis.com/packages/ota-api/package/4e6acbd4fc5a39147ce6ae8b218d250633e3b20d.zip
