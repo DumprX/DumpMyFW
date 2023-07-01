@@ -12,15 +12,22 @@ env:
   # Private SSH Key
   PRIV_SSH_KEY: ENCRYPTED[0767bc608a75b9133cdf027bf29c05e405e794fbd133dd0da75e5b83f6983df4550dc95bb5e9d19371c8df543bc9a1e1]
 
+  # Shell
+  CIRRUS_SHELL: bash
+
+  # Home Directory
+  HOME: /root
+
 task:
   name: "Firmware Dump by DumprX"
   only_if: $CIRRUS_REPO_OWNER == 'DumprX'
   skip: $CIRRUS_BRANCH == 'main'
   auto_cancellation: $CIRRUS_BRANCH == 'autocancel'
   timeout_in: 120m
-  container:
-      image: ghcr.io/sushrut1101/docker:arch
-      privileged: true
+  compute_engine_instance:
+      image_project: ubuntu-os-cloud
+      image: family/ubuntu-2210-amd64
+      platform: linux
       cpu: 4
       memory: 16G
 
