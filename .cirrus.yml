@@ -2,15 +2,15 @@ env:
   # Telegram
   TG_CHAT: "@DumprXDumps"
   TG_TOKEN: ENCRYPTED[d97b38fc916f5b418bdee35179170de5a921ccc7aef4bbdf33548a75cdb5e874cfeef6e4869526dd4ebf308a9fcdd2df]
-  
+
   # Gitlab
   PUSH_TO_GITLAB: true
   GITLAB_GROUP: DumprX
-  GITLAB_TOKEN: ENCRYPTED[17b1da005e5941730182c79abd96db912c5df6ecd29271b9aa3045d17e674f8f2d8a596cc1373ceba2262911b106e37e]
-  GITLAB_INSTANCE: code.input.sh
-  
+  GITLAB_TOKEN: ENCRYPTED[4bf13a08acf30d4738403638464ea7c1ba3f5d157db84b9fbdac0ec0ab2b347dc89895ecabf01a36f37c6e87dff8d428]
+  GITLAB_INSTANCE: gitlab.taiao.ai
+
   # Private SSH Key
-  PRIV_SSH_KEY: ENCRYPTED[a6edf355d21857b835c9e347c83b38cef62ddc46258fe62d530b8fc9be3f240b273fccdfa70aa50cf255cb5d3b69e730]
+  PRIV_SSH_KEY: ENCRYPTED[0767bc608a75b9133cdf027bf29c05e405e794fbd133dd0da75e5b83f6983df4550dc95bb5e9d19371c8df543bc9a1e1]
 
 task:
   name: "Firmware Dump by DumprX"
@@ -25,27 +25,28 @@ task:
       memory: 16G
 
   Clone_script:
-      - git clone --depth=1 --single-branch https://github.com/DumprX/DumprX.git
+      - git clone --depth=1 --single-branch https://github.com/DumprX/DumprX.git ~/DumprX
   
   Set-SSH-Keys_script:
       - mkdir -p ~/.ssh
-      - ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
-      - ssh-keyscan -t rsa gitlab.com >> ~/.ssh/known_hosts
-      - ssh-keyscan -t rsa $GITLAB_INSTANCE >> ~/.ssh/known_hosts
-      - echo "$PRIV_SSH_KEY" > ~/.ssh/id_rsa
-      - chmod 600 ~/.ssh/id_rsa
+      - ssh-keyscan -H github.com >> ~/.ssh/known_hosts
+      - ssh-keyscan -H gitlab.com >> ~/.ssh/known_hosts
+      - ssh-keyscan -H "${GITLAB_INSTANCE}" >> ~/.ssh/known_hosts
+      - echo "${PRIV_SSH_KEY}" > ~/.ssh/id_ed25519
+      - chmod 600 ~/.ssh/id_ed25519
 
   Setup_script:
       - git config --global user.name "Sushrut1101"
       - git config --global user.email "guptasushrut@gmail.com"
-      - cd DumprX
-      - echo "$GITLAB_TOKEN" > .gitlab_token
-      - echo "$GITLAB_GROUP" > .gitlab_group
-      - echo "$TG_CHAT" > .tg_chat
-      - echo "$TG_TOKEN" > .tg_token
-      - echo "$GITLAB_INSTANCE" > .gitlab_instance
-      - sudo bash setup.sh
+      - git config --global color.ui auto
+      - cd ~/DumprX
+      - echo "${GITLAB_TOKEN}" > .gitlab_token
+      - echo "${GITLAB_GROUP}" > .gitlab_group
+      - echo "${TG_CHAT}" > .tg_chat
+      - echo "${TG_TOKEN}" > .tg_token
+      - echo "${GITLAB_INSTANCE}" > .gitlab_instance
+      - bash setup.sh
 
   DumprX_script:
-      - cd DumprX || echo "Already in the Directory"
-      - ./dumper.sh $(< ${CIRRUS_WORKING_DIR}/ROM_URL.txt)
+      - cd ~/DumprX
+      - ./dumper.sh $(cat ${CIRRUS_WORKING_DIR}/ROM_URL.txt)
